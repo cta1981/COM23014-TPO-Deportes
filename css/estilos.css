@@ -39,7 +39,7 @@ body {
     grid-area: encabezado;
 }
 
-.contenedor .encabezado h1, a{
+.contenedor .encabezado h1{
     color: white;
     padding: 5px;
 }
