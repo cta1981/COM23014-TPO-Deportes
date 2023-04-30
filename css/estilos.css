@@ -92,9 +92,6 @@ display:flex;
 justify-content:end
 }
 
-  
-
-
 @media screen and (max-width: 450px) {
     .contenedor {
         grid-template-areas:    "encabezado encabezado encabezado"
@@ -102,4 +99,13 @@ justify-content:end
                                 "sidebar sidebar sidebar"
                                 "pie pie pie";
     }
+}
+
+.formulario {
+width:90%;
+margin: 10px auto;
+}
+
+.formulario h1{
+    background-color: darkgoldenrod;
 }
