@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    color: #000;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+
+.contenedor {
+    width: 90%;
+    margin: 10px auto;
+    /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 10px;
+ 
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:    " encabezado encabezado encabezado "
+                            " contenido contenido sidebar "
+                            " pie pie pie "
+}
+
+
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .pie {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contenedor .encabezado {
+    background: darkblue;
+    color: #fff;
+    grid-area: encabezado;
+}
+
+.contenedor .encabezado h1{
+    color: white;
+    padding: 5px;
+}
+
+.contenedor .contenido {
+    background: white;
+    grid-area: contenido;
+}
+
+.contenedor .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.contenedor .contenido .titulo:hover {
+background-color: rgb(213, 219, 217);
+}
+
+
+.contenedor .sidebar {
+    background: orange;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    grid-area: sidebar;
+    
+}
+.noticias {
+    font-weight: bold;
+}    
+.contenedor .pie {
+    background: darkblue;
+    color: white;
+    grid-area: pie;
+}
+
+.contenedor .sidebar .tarjeta {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: beige;
+    border-width: 1px;
+    color: beige;
+    padding: 10px;
+   
+}
+
+.contenedor .pie .alineacion{
+display:flex;
+justify-content:end
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor {
+        grid-template-areas:    "encabezado encabezado encabezado"
+                                "contenido contenido contenido"
+                                "sidebar sidebar sidebar"
+                                "pie pie pie";
+    }
+}
+
+.formulario {
+width:90%;
+margin: 10px auto;
+}
+
+.formulario h1{
+    background-color: darkgoldenrod;
+}
