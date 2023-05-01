@@ -1,5 +1,4 @@
-30/04 15:48
-Estuve tratando de hacer el formulario. Quedo funcionando html y css pero no logro comunicar con el servidor de formularios Formspree.
-Si copio el código contacto.html en la web de formspree el formulario se envia y lo puedo ver en mi cuenta de formspree.
-Si alguno lo puede hacer funcionar...
-Lo realizado esta hecho en base al material extra que dejo Damian (el profe) en las clases 14 y 15
+01/05 10.30 hs
+Al preionar enviar en el formulario que tiene js no conecta con la web de formspree
+Aparentemente el problema esta en archivo formulario.js que valida los campos a completar, porque si comento el llamado del archivo fomulario.js en contacto.html lo envia sin problemas
+
