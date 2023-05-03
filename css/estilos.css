@@ -35,20 +35,23 @@ body {
 }
 
 .contenedor .encabezado {
-    background: darkblue;
+    background: rgba(24, 45, 100, 0.3);
     color: #fff;
     grid-area: encabezado;
-  
+    position: fixed;
+    width: 90%;
+
+    
 }
 
 .contenedor .encabezado h1{
     color: white;
-    padding: 5px;
-}
+  }
 
 .contenedor .contenido {
     background: white;
     grid-area: contenido;
+    margin-top: 100px;
 }
 
 .contenedor .main {
@@ -64,7 +67,8 @@ background-color: rgb(213, 219, 217);
 
 
 .contenedor .sidebar {
-    background: orange;
+    margin-top: 150px;
+    background: rgba(145, 96, 6, 0.7);
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     flex-direction: column;
@@ -74,7 +78,7 @@ background-color: rgb(213, 219, 217);
 }
     
 .contenedor .pie {
-    background: darkblue;
+    background: rgba(48, 47, 47, 0.445);
     color: white;
     grid-area: pie;
 }
@@ -92,6 +96,7 @@ background-color: rgb(213, 219, 217);
 .contenedor .pie .alineacion {
 display:flex;
 justify-content:end;
+
 }
 
 
@@ -104,7 +109,7 @@ justify-content:end;
                                 "pie pie pie";
     }
     .contenedor .sidebar {
-        background: orange;
+        background: rgba(145, 96, 6, 0.7);
         /*utilizamos flexbox para alinear el contenido*/
         display: flex;
         flex-direction: row;
@@ -122,7 +127,7 @@ justify-content:end;
                                 "pie pie pie";
     }
     .contenedor .sidebar {
-        background: orange;
+        background: rgba(145, 96, 6, 0.7);;
         /*utilizamos flexbox para alinear el contenido*/
         display: flex;
         flex-direction: column;
