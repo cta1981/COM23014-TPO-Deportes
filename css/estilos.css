@@ -10,6 +10,7 @@ body {
 }
 
 .contenedor {
+  
     width: 90%;
     margin: 10px auto;
     /*auto permite centrar nuestra página en forma horizontal*/
@@ -37,6 +38,7 @@ body {
     background: darkblue;
     color: #fff;
     grid-area: encabezado;
+  
 }
 
 .contenedor .encabezado h1{
@@ -87,9 +89,29 @@ background-color: rgb(213, 219, 217);
    
 }
 
-.contenedor .pie .alineacion{
+.contenedor .pie .alineacion {
 display:flex;
-justify-content:end
+justify-content:end;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas:    "encabezado encabezado encabezado"
+                                "contenido contenido contenido"
+                                "sidebar sidebar sidebar"
+                                "pie pie pie";
+    }
+    .contenedor .sidebar {
+        background: orange;
+        /*utilizamos flexbox para alinear el contenido*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        grid-area: sidebar;
+        gap: 15px
 }
 
 @media screen and (max-width: 450px) {
@@ -99,7 +121,18 @@ justify-content:end
                                 "sidebar sidebar sidebar"
                                 "pie pie pie";
     }
+    .contenedor .sidebar {
+        background: orange;
+        /*utilizamos flexbox para alinear el contenido*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        grid-area: sidebar;
+        gap: 15px
 }
+}
+
 
 .formulario {
 width:90%;
