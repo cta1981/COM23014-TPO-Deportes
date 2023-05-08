@@ -4,13 +4,13 @@
 }
 
 body {
-    background: white;
+    background: rgb(240, 240, 216);
     color: #000;
     font-family: 'Asap Condensed', sans-serif;
 }
 
-
 .contenedor {
+  
     width: 90%;
     margin: 10px auto;
     /*auto permite centrar nuestra página en forma horizontal*/
@@ -26,7 +26,6 @@ body {
                             " pie pie pie "
 }
 
-
 .contenedor .encabezado,
 .contenedor .contenido,
 .contenedor .sidebar,
@@ -36,19 +35,23 @@ body {
 }
 
 .contenedor .encabezado {
-    background: darkblue;
+    background: rgba(0, 128, 128, 0.699);
     color: #fff;
     grid-area: encabezado;
+    position: fixed;
+    width: 90%;
+
+    
 }
 
 .contenedor .encabezado h1{
     color: white;
-    padding: 5px;
-}
+  }
 
 .contenedor .contenido {
-    background: white;
+    background-color: rgb(240, 240, 216);
     grid-area: contenido;
+    margin-top: 100px;
 }
 
 .contenedor .main {
@@ -64,20 +67,22 @@ background-color: rgb(213, 219, 217);
 
 
 .contenedor .sidebar {
-    background: orange;
+    margin-top: 150px;
+    background: rgba(118, 185, 63, 0.7);
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
     grid-area: sidebar;
-    
 }
-.noticias {
+.contenedor .sidebar h2{
+    color: white;
     font-weight: bold;
-}    
+  }
+    
 .contenedor .pie {
-    background: darkblue;
+    background: rgb(0, 128, 128, 0.699);
     color: white;
     grid-area: pie;
 }
@@ -92,9 +97,30 @@ background-color: rgb(213, 219, 217);
    
 }
 
-.contenedor .pie .alineacion{
+.contenedor .pie .alineacion {
 display:flex;
-justify-content:end
+justify-content:end;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas:    "encabezado encabezado encabezado"
+                                "contenido contenido contenido"
+                                "sidebar sidebar sidebar"
+                                "pie pie pie";
+    }
+    .contenedor .sidebar {
+        background: rgba(118, 185, 63, 0.7);
+        /*utilizamos flexbox para alinear el contenido*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        grid-area: sidebar;
+        gap: 15px
 }
 
 @media screen and (max-width: 450px) {
@@ -104,7 +130,18 @@ justify-content:end
                                 "sidebar sidebar sidebar"
                                 "pie pie pie";
     }
+    .contenedor .sidebar {
+        rgba(118, 185, 63, 0.7);;
+        /*utilizamos flexbox para alinear el contenido*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        grid-area: sidebar;
+        gap: 15px
 }
+}
+
 
 .formulario {
 width:90%;

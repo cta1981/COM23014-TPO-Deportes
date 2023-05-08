@@ -4,7 +4,7 @@
 }
 
 body {
-    background: white;
+    background: rgb(240, 240, 216);
     color: #000;
     font-family: 'Asap Condensed', sans-serif;
 }
@@ -37,7 +37,6 @@ body {
 .contenedor .encabezado {
     background: rgba(24, 45, 100, 0.3);
     color: darkorange;
-    font-style: oblique;
     font-weight: bolder;
     grid-area: encabezado;
     position: fixed;
@@ -47,7 +46,7 @@ body {
 
 
 .contenedor .contenido {
-    background: white;
+    background-color: rgb(240, 240, 216);
     grid-area: contenido;
     margin-top: 120px;
 }
@@ -66,7 +65,7 @@ background-color: rgb(213, 219, 217);
 
 .contenedor .sidebar {
     margin-top: 150px;
-    background: rgba(145, 96, 6, 0.7);
+    background: rgba(118, 185, 63, 0.7);
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     flex-direction: column;
@@ -74,6 +73,10 @@ background-color: rgb(213, 219, 217);
     justify-content:space-between;
     grid-area: sidebar;
 }
+.contenedor .sidebar h2{
+    color: white;
+    font-weight: bold;
+  }
     
 .contenedor .pie {
     background: rgba(48, 47, 47, 0.445);
@@ -107,7 +110,7 @@ justify-content:end;
                                 "pie pie pie";
     }
     .contenedor .sidebar {
-        background: rgba(145, 96, 6, 0.7);
+        background: rgba(118, 185, 63, 0.7);
         /*utilizamos flexbox para alinear el contenido*/
         display: flex;
         flex-direction: row;
@@ -125,7 +128,7 @@ justify-content:end;
                                 "pie pie pie";
     }
     .contenedor .sidebar {
-        background: rgba(145, 96, 6, 0.7);;
+        background: rgba(118, 185, 63, 0.7);;
         /*utilizamos flexbox para alinear el contenido*/
         display: flex;
         flex-direction: column;
