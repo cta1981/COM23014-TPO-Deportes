@@ -36,22 +36,20 @@ body {
 
 .contenedor .encabezado {
     background: rgba(24, 45, 100, 0.3);
-    color: #fff;
+    color: darkorange;
+    font-style: oblique;
+    font-weight: bolder;
     grid-area: encabezado;
     position: fixed;
     width: 90%;
-
-    
+  
 }
 
-.contenedor .encabezado h1{
-    color: white;
-  }
 
 .contenedor .contenido {
     background: white;
     grid-area: contenido;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .contenedor .main {
