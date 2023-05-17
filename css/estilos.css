@@ -36,7 +36,7 @@ body {
 
 .contenedor .encabezado {
     background: rgba(24, 45, 100, 0.3);
-    color: darkorange;
+    color: white;
     font-weight: bolder;
     grid-area: encabezado;
     position: fixed;
