@@ -51,7 +51,7 @@ body {
 .contenedor .contenido {
     background-color: rgb(240, 240, 216);
     grid-area: contenido;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .contenedor .main {

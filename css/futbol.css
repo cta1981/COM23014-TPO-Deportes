@@ -131,7 +131,7 @@ justify-content:end;
                                 "pie pie pie";
     }
     .contenedor .sidebar {
-        rgba(118, 185, 63, 0.7);;
+        color: rgba(118, 185, 63, 0.7);;
         /*utilizamos flexbox para alinear el contenido*/
         display: flex;
         flex-direction: column;
@@ -150,4 +150,5 @@ margin: 10px auto;
 
 .formulario h1{
     background-color: darkgoldenrod;
+}
 }
