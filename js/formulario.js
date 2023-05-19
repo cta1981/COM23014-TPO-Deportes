@@ -1,9 +1,9 @@
-const formulario = document.getElementById('formulario');
+const formulario = document.querySelector('#formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-].[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
 	comentarios:/^[a-zA-ZÀ-ÿ0-9\s¿?!()/%$ªº+-]{1,160}$/ // 1 a 160 caracteres.
 	
@@ -56,22 +56,38 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
-
+formulario.addEventListener('submit', handleSubmit)
+async function handleSubmit(event){
+	event.preventDefault()
+	
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.correo && campos.telefono && campos.comentarios && terminos.checked ){
-		formulario.reset();
+	formulario.reset();
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+	// document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+	// setTimeout(() => {
+	// /document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+	// }, 5000);
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
-		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+	// document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+	// icono.classList.remove('formulario__grupo-correcto');
+	// });
+	// } else {
+	// document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+	// }
+	
+	const form=new FormData(this)
+	const response=await fetch(this.action, {
+	method: this.method,
+	body: form,
+	headers:{
+		'Accept': 'application/JSON'
+	}})}
+
+if (response.ok){
+	alert('El formulario se envio correctamente')}
+	else {
+		alert("debe completar los campos obligatorios")
 	}
-});
+	
+}

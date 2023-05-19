@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,39 +29,26 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/361938e664.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/Rugby.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Rugby - Mas que un deporte</title>
 </head>
 
 <body>
     <section class="contenedor">
         <header class="encabezado">
-            <span class="animate__animated animate__headShake">TODO DEPORTES</span>
+            <h1>TODO DEPORTES</h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="futbol.html">Fútbol</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="tenis.html">Tenis</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-                            </li>
-                        </ul>
+                <p></p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="futbol.html">Fútbol</a>
+                        <a class="nav-item nav-link" href="tenis.html">Tenis</a>
+                        <a class="nav-item nav-link" href="contacto.html">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -60,8 +57,7 @@
         <main class="contenido">
             <div class="titulo">
                 <h1 class="noticias">Rugby - deporte de caballeros</h1>
-                <img src="media/logo_Pumas.png" alt="UAR"
-                    height="50%" width="20%"">
+                <img src="media/logo_Pumas.png" alt="UAR" height="50%" width="20%"">
 
                 <p>El rugby, es un juego en el que los pies o las manos de los jugadores llevan una pelota ovalada hasta la línea inferior del campo, donde hay una barra transversal similar a una H.
                 El objetivo principal es hacer un try, que consiste en pasar el balón por la línea de fondo y tocarlo en el suelo, la jugada que más puntos vale en el juego.</p>
@@ -81,8 +77,7 @@
             <br>           
             <div class=" titulo">
                 <h1>Historia</h1>
-                <img src="media/cantando himno.avif"
-                    alt="Los Pumas Cantando el Himno" height="100%" width="100%">
+                <img src="media/cantando himno.avif" alt="Los Pumas Cantando el Himno" height="100%" width="100%">
                 <br>
                 <p>El origen del rugby se remonta a los griegos y romanos, que solían jugar a la pelota, episkyros y
                     harpastum, respectivamente.
@@ -121,14 +116,15 @@
 
                 <p>El equipo de rugby de Nueva Zelanda es uno de los mejores del mundo. Conocidos como All Blacks, el
                     equipo suele hacer el Haka, que es un baile típico del pueblo maorí utilizado, entre otras cosas,
-                   como forma de intimidación.<p>
-            
+                    como forma de intimidación.
+                <p>
+
             </div>
 
         </main>
 
         <aside class=" sidebar">
-            <h2 class="noticias">NOTICIAS</h2>
+           
             <div class="tarjeta">
                 <div class="noticia">
                     <h3 class="noticias">Pumas Seven dejando bien alto al deporte</h3>
@@ -136,12 +132,17 @@
                 </div>
 
                 <div class="noticia_imagen">
-                    <img src="media/pumas_7.webp" alt="SevenPumas"
-                                            width="100%" alt="Noticia 1">
+                    <img src="media/pumas_7.webp" alt="SevenPumas" width="100%" alt="Noticia 1">
                 </div>
 
                 <div class="noticia_texto">
-                    <p> A falta de la última etapa del World Rugby Sevens Series 2022/23, Los Pumas 7´s se aseguraron el segundo puesto del ranking por primera vez en su historia, superando el tercer lugar obtenido en la temporada 2003/2004, tras conquistar la medalla de plata en el Seven de Toulouse al caer en la definición en tiempo extra ante Nueva Zelanda por 24-19. Además, en este torneo, el combinado nacional obtuvo el pasaje a los Juegos Olímpicos de París 2024. Asimismo, el conjunto neozelandés (quinto título consecutivo en el año) se coronó campeón de la temporada en el WRSS.</p>
+                    <p> A falta de la última etapa del World Rugby Sevens Series 2022/23, Los Pumas 7´s se aseguraron el
+                        segundo puesto del ranking por primera vez en su historia, superando el tercer lugar obtenido en
+                        la temporada 2003/2004, tras conquistar la medalla de plata en el Seven de Toulouse al caer en
+                        la definición en tiempo extra ante Nueva Zelanda por 24-19. Además, en este torneo, el combinado
+                        nacional obtuvo el pasaje a los Juegos Olímpicos de París 2024. Asimismo, el conjunto
+                        neozelandés (quinto título consecutivo en el año) se coronó campeón de la temporada en el WRSS.
+                    </p>
                 </div>
 
                 <br>
@@ -158,12 +159,17 @@
                 </div>
 
                 <div class="noticia_imagen">
-                    <img src="media/MujeresRugby.jpg"
-                        alt="yaguaretes" width="100%"">
+                    <img src="media/MujeresRugby.jpg" alt="yaguaretes" width="100%"">
                     </div>
             
                     <div class=" noticia_texto">
-                    <p> En el horizonte se visualiza el desafío de ir en busca de la anhelada clasificación para los Juegos Olímpicos de París 2024, y para alcanzarlo, Las Yaguaretés continuarán con su preparación. El seleccionado femenino realizará la tercera Concentración Nacional de la temporada, entre el jueves 18 y el domingo 21 de mayo, en la sede de Casa Pumas, con el propósito de avanzar en la puesta a punto para lo que será la participación en el certamen clasificatorio para los Juegos, a organizarse en el Estadio Charrúa de la ciudad de Montevideo, entre el 15 y 17 de junio.</p>
+                    <p> En el horizonte se visualiza el desafío de ir en busca de la anhelada clasificación para los
+                        Juegos Olímpicos de París 2024, y para alcanzarlo, Las Yaguaretés continuarán con su
+                        preparación. El seleccionado femenino realizará la tercera Concentración Nacional de la
+                        temporada, entre el jueves 18 y el domingo 21 de mayo, en la sede de Casa Pumas, con el
+                        propósito de avanzar en la puesta a punto para lo que será la participación en el certamen
+                        clasificatorio para los Juegos, a organizarse en el Estadio Charrúa de la ciudad de Montevideo,
+                        entre el 15 y 17 de junio.</p>
                 </div>
 
                 <br>
@@ -180,12 +186,16 @@
                 </div>
 
                 <div class="noticia_imagen">
-                    <img src="media/Seven pumas.jpg" width="100%"
-                        alt="Sueño">
+                    <img src="media/Seven pumas.jpg" width="100%" alt="Sueño">
                 </div>
 
                 <div class="noticia_texto">
-                    <p> Los Pumas 7´s tienen una mentalidad ganadora y tal es así, que ni bien lograron la clasificación a los Juegos Olímpicos de París 2024, el equipo ya piensa en llegar a lo más alto del podio el año que viene en la capital francesa. Así lo comentaron los capitanes del equipo, Matías Osadczuk, que viajó a Europa a acompañar a sus compañeros, Santiago Álvarez y Gastón Revol, que quienes, junto al Head Coach del plantel Santiago Gómez Cora, participaron en la conferencia de prensa virtual que brindaron luego de la medalla de plata obtenida en el Seven de Toulouse.</p>
+                    <p> Los Pumas 7´s tienen una mentalidad ganadora y tal es así, que ni bien lograron la clasificación
+                        a los Juegos Olímpicos de París 2024, el equipo ya piensa en llegar a lo más alto del podio el
+                        año que viene en la capital francesa. Así lo comentaron los capitanes del equipo, Matías
+                        Osadczuk, que viajó a Europa a acompañar a sus compañeros, Santiago Álvarez y Gastón Revol, que
+                        quienes, junto al Head Coach del plantel Santiago Gómez Cora, participaron en la conferencia de
+                        prensa virtual que brindaron luego de la medalla de plata obtenida en el Seven de Toulouse.</p>
                 </div>
 
                 <br>
@@ -198,7 +208,7 @@
         </aside>
 
         <footer class="pie">
-            <h2>Escribinos en nuestras redes.</h2>
+            <h6>TODO DEPORTES ©Copyright 2023</h6>
             <div class="alineacion">
                 <a href="https://www.instagram.com/" title="Instagram" target="_blank">
                     <i class="fa-brands fa-instagram fa-shake" style="font-size: 32px"></i>
