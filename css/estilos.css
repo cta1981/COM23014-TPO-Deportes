@@ -12,7 +12,7 @@ body {
 .contenedor {
   
     width: 90%;
-    margin: 10px auto;
+    margin: 0px auto;
     /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
     gap: 10px;
@@ -35,7 +35,7 @@ body {
 }
 
 .contenedor .encabezado {
-    background: rgba(24, 45, 100, 0.3);
+    background: rgb(24, 46, 100);
     color: white;
     font-weight: bolder;
     grid-area: encabezado;
@@ -48,7 +48,8 @@ body {
 .contenedor .contenido {
     background-color: rgb(240, 240, 216);
     grid-area: contenido;
-    margin-top: 120px;
+    margin-top: 150px;
+    margin-left: -20px;
 }
 
 .contenedor .main {
@@ -64,12 +65,12 @@ background-color: rgb(213, 219, 217);
 
 
 .contenedor .sidebar {
-    margin-top: 150px;
+    margin-top: 170px;
     background: rgba(118, 185, 63, 0.7);
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     grid-area: sidebar;
 }
 
