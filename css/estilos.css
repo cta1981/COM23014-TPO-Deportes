@@ -66,7 +66,7 @@ background-color: rgb(213, 219, 217);
 
 .contenedor .sidebar {
     margin-top: 170px;
-    background: rgba(118, 185, 63, 0.7);
+    background: rgba(51, 88, 21, 0.856);
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     flex-direction: column;
