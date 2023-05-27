@@ -79,7 +79,7 @@ async function handleSubmit(event) {
 		}
 		
 	}
-	else {alert("complete los campos correctamente")}
+	else {alert("Complete los campos correctamente")}
 }
 		// document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		// setTimeout(() => {

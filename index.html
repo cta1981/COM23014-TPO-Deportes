@@ -49,7 +49,9 @@
                         <a class="nav-item nav-link" href="futbol.html">Fútbol</a>
                         <a class="nav-item nav-link" href="tenis.html">Tenis</a>
                         <a class="nav-item nav-link" href="rugby.html">Rugby</a>
+                        <a class="nav-item nav-link" href="apiClima.html">Clima</a>
                         <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                        
                     </div>
                 </div>
             </nav>
@@ -121,6 +123,7 @@
                 <div class="noticia_imagen">
                     <img src="https://media.tycsports.com/files/2023/04/13/555924/del-potro-y-su-preparador-fisico-duglas-cordero_862x485.webp" width="100%" alt="Delpotro">
                 </div>
+                box-sizing: border-box;
 
                 <div class=" noticia_texto">
                     <p> Juan Martín Del Potro no se rinde y lucha por su deseo: volver a disputar el US Open. Tras su
@@ -135,28 +138,26 @@
             </div>
 
             <div class="tarjeta">
-                <div class="noticia">
-                    <h3>Los Pumas 7´s cumplieron el sueño olímpico</h3>
+               
+                <div id="contenedorApi">
+                    <h3>Clima</h3>
 
+                    <div class="clima">
+                    <div id="caja1">
+                        <h1 id="temperatura-valor"></h1>
+                        <h1 id="temperatura-descripcion"></h1>
+                    </div>
+                    <div id="caja2">
+                        <h2 id="ubicacion"></h2>
+                        <img id="icono-animado" src="" alt="" height="128" width="128">
+                    </div>
+                    <div id="caja3">
+                        <h3>Velocidad Viento</h3>
+                        <h1 id="viento-velocidad"></h1>
+                    </div>
                 </div>
+            </div>
 
-                <div class="noticia_imagen">
-                    <img src="media/Pumas.jpg" width="100%" alt="Pumas">
-                </div>
-
-                <div class="noticia_texto">
-                    <p> Era la gran meta de la temporada, y con el transcurso del World Rugby Sevens Series ese camino
-                        hacia el sueño olímpico se fue consolidando. Hasta que el objetivo se alcanzó hoy en el Seven de
-                        Toulouse. Antes de disputar el encuentro ante Gran Bretaña, en el cierre de la etapa
-                        eliminatoria del torneo francés, por la caída de Samoa ante Australia (26-7), Los Pumas 7’s
-                        obtuvieron la clasificación directa para los Juegos Olímpicos de París 2024. Vale consignar que
-                        los cuatro mejores del ranking 2023 del WRSS obtienen la plaza olímpica, pasaje que solamente
-                        tiene el líder Nueva Zelanda, la Argentina y Francia por ser el país anfitrión.</p>
-                </div>
-
-                <div class="noticia_enlace">
-                    <a href=" #" class="leer-mas">Leer más >></a>
-                </div>
             </div>
         </aside>
 
@@ -178,6 +179,8 @@
 
         </footer>
     </section>
+
+   <script src="./js/apiClima.js"></script>
 </body>
 
 </html>

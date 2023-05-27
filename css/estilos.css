@@ -96,6 +96,47 @@ justify-content:end;
 
 }
 
+.clima {
+    font-size: small;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px;
+    font-size: small;
+    justify-content: center
+}
+
+
+
+ #caja1, #caja2, #caja3 {
+    margin: auto;
+ 
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    font-size: small;
+}
+
+#caja1 {
+    background-color: rgba(0,0,0,0.767);
+    color:azure;    
+}
+#caja2 {
+    background-color: darkslateblue;
+    color:azure;    
+}
+#caja3 {
+    background-color: #2ab2ea;
+    color:azure;    
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .contenedor {
